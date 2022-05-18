@@ -1,0 +1,1171 @@
+{
+	"methods": [
+		{
+			"name": "android.hardware.biometrics.ParentalControlsUtilsInternal.isTestModeEnabled",
+			"return": "boolean",
+			"parametersTypes": [
+                "android.content.Context"
+            ],
+			"parametersNames":[
+				"context"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.provider.Settings.Secure.getInt",
+                "android.content.Context.getContentResolver"
+            ],
+			"labels": ["permission"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/ParentalControlsUtilsInternal.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.ParentalControlsUtilsInternal.parentConsentRequired",
+			"return": "boolean",
+			"parametersTypes": [
+                "android.content.Context",
+                "android.app.admin.DevicePolicyManager",
+                "int",
+                "android.os.UserHandle"
+            ],
+			"parametersNames":[
+				"context",
+				"dpm",
+				"modality",
+				"userHandle"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.ParentalControlsUtilsInternal.isTestModeEnabled",
+                "android.hardware.biometrics.ParentalControlsUtilsInternal.parentConsentRequired"
+            ],
+			"labels": ["permission"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/ParentalControlsUtilsInternal.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.ParentalControlsUtilsInternal.parentConsentRequired",
+			"return": "boolean",
+			"parametersTypes": [
+                "android.app.admin.DevicePolicyManager",
+                "int",
+                "android.os.UserHandle"
+            ],
+			"parametersNames":[
+				"dpm",
+				"modality",
+				"userHandle"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.ParentalControlsUtilsInternal.getSupervisionComponentName",
+                "android.app.admin.DevicePolicyManager.getKeyguardDisabledFeatures",
+                "android.hardware.biometrics.ParentalControlsUtilsInternal.containsFlag"
+            ],
+			"labels": ["permission"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/ParentalControlsUtilsInternal.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.ParentalControlsUtilsInternal.getSupervisionComponentName",
+			"return": "android.content.ComponentName",
+			"parametersTypes": [
+                "android.app.admin.DevicePolicyManager",
+                "android.os.UserHandle"
+            ],
+			"parametersNames":[
+				"dpm",
+				"userHandle"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.app.admin.DevicePolicyManager.getProfileOwnerOrDeviceOwnerSupervisionComponent"
+            ],
+			"labels": ["permission"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/ParentalControlsUtilsInternal.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.ParentalControlsUtilsInternal.containsFlag",
+			"return": "boolean",
+			"parametersTypes": [
+                "int",
+                "int"
+            ],
+			"parametersNames":[
+				"haystack",
+				"needle"
+			],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": ["permission"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/ParentalControlsUtilsInternal.java",
+		"comments": ""
+		},
+
+		{
+			"name": "android.hardware.biometrics.CryptoObject.getSignature",
+			"return": "javax.crypto.Signature",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/CryptoObject.java",
+		"comments": ""
+		}, 
+        {
+			"name": "android.hardware.biometrics.CryptoObject.getCipher",
+			"return": "javax.crypto.Cipher",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/CryptoObject.java",
+		"comments": ""
+		}, 
+        {
+			"name": "android.hardware.biometrics.CryptoObject.getMac",
+			"return": "javax.crypto.Mac",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/CryptoObject.java",
+		"comments": ""
+		}, 
+        {
+			"name": "android.hardware.biometrics.CryptoObject.getIdentityCredential",
+			"return": "android.security.identity.IdentityCredential",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/CryptoObject.java",
+		"comments": ""
+		},   
+        {
+			"name": "android.hardware.biometrics.CryptoObject.getOpId",
+			"return": "long",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.security.identity.IdentityCredential.getCredstoreOperationHandle",
+                "android.security.keystore2.AndroidKeyStoreProvider.getKeyStoreOperationHandle"
+            ],
+			"labels": [
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/CryptoObject.java",
+		"comments": ""
+		},
+
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.Identifier.getName",
+			"return": "CharSequence",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.Identifier.getBiometricId",
+			"return": "int",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.Identifier.getDeviceId",
+			"return": "long",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.Identifier.setName",
+			"return": "void",
+			"parametersTypes": [
+				"CharSequence"
+			],
+			"parametersNames":[
+				"name"
+			],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"sink"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.Identifier.setDeviceId",
+			"return": "void",
+			"parametersTypes": [
+				"long"
+			],
+			"parametersNames":[
+				"deviceId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"sink"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.AuthenticationResult.getCryptoObject",
+			"return": "android.hardware.biometrics.CryptoObject",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source",
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.AuthenticationResult.getAuthenticationType",
+			"return": "int",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricAuthenticator.AuthenticationResult.getId",
+			"return": "android.hardware.biometrics.BiometricAuthenticator.AuthenticationResult.Identifier",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricAuthenticator.AuthenticationResult.getUserId",
+			"return": "int",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": ["source"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricAuthenticator.java",
+		"comments": ""
+		},
+
+		{
+			"name": "android.hardware.biometrics.BiometricManager.Strings.getPromptMessage",
+			"return": "CharSequence",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.content.Context.getUserId",
+                "android.content.Context.getOpPackageName",
+                "android.hardware.biometrics.IAuthService.getPromptMessage"
+            ],
+			"labels": [
+				"source"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.Strings.getSettingName",
+			"return": "CharSequence",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.content.Context.getUserId",
+                "android.content.Context.getOpPackageName",
+                "android.hardware.biometrics.IAuthService.getSettingName"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.getSensorProperties",
+			"return": "List<android.hardware.biometrics.SensorProperties>",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.IAuthService.getSensorProperties",
+                "android.content.Context.getOpPackageName"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricManager.canAuthenticate",
+			"return": "int",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.BiometricManager.canAuthenticate",
+                "android.content.Context.getUserId",
+				"android.content.Context.getApplicationInfo"
+            ],
+			"labels": [
+				"interaction",
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.canAuthenticate",
+			"return": "int",
+			"parametersTypes": [
+                "int"
+            ],
+			"parametersNames":[
+				"authenticators"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.BiometricManager.canAuthenticate",
+                "android.content.Context.getUserId"
+            ],
+			"labels": [
+				"interaction",
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.canAuthenticate",
+			"return": "int",
+			"parametersTypes": [
+                "int",
+                "int"
+            ],
+			"parametersNames":[
+				"userId",
+				"authenticators"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.content.Context.getOpPackageName",
+                "android.hardware.biometrics.IAuthService.canAuthenticate"
+            ],
+			"labels": [
+				"interaction",
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.getStrings",
+			"return": "java.lang.String",
+			"parametersTypes": [
+                "int"
+            ],
+			"parametersNames":[
+				"authenticators"
+			],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.invalidateAuthenticatorIds",
+			"return": "void",
+			"parametersTypes": [
+                "int",
+                "int",
+                "android.hardware.biometrics.IInvalidationCallback"
+            ],
+			"parametersNames":[
+				"userId",
+				"fromSensorId",
+				"callback"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.IAuthService.invalidateAuthenticatorIds"
+            ],
+			"labels": ["source"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.getAuthenticatorIds",
+			"return": "long[]",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.os.UserHandle.myUserId",
+                "android.hardware.biometrics.BiometricManager.getAuthenticatorIds"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.getAuthenticatorIds",
+			"return": "long[]",
+			"parametersTypes": [
+                "int"
+            ],
+			"parametersNames":[
+				"userId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.IAuthService.getAuthenticatorIds"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+        {
+			"name": "android.hardware.biometrics.BiometricManager.resetLockoutTimeBound",
+			"return": "void",
+			"parametersTypes": [
+                "android.os.IBinder",
+                "java.lang.String",
+                "int",
+                "int",
+                "byte[]"
+            ],
+			"parametersNames":[
+				"token",
+				"opPackageName",
+				"fromSensorId",
+				"userId",
+				"hardwareAuthToken"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.hardware.biometrics.IAuthService.resetLockoutTimeBound"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricManager.java",
+		"comments": ""
+		},
+
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticateUser",
+			"return": "void",
+			"parametersTypes": [
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback",
+				"int"
+			],
+			"parametersNames":[
+				"cancel",
+				"executor",
+				"callback",
+				"userId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.BiometricPrompt.authenticateUserForOperation"
+			],
+			"labels": [
+				"authentication",
+				"bioClass2"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticateUserForOperation",
+			"return": "void",
+			"parametersTypes": [
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback",
+				"int",
+				"long"
+			],
+			"parametersNames":[
+				"cancel",
+				"executor",
+				"callback",
+				"userId",
+				"operationId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.BiometricPrompt.authenticateInternal"
+			],
+			"labels": [
+				"authentication",
+				"bioClass3",
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticate",
+			"return": "void",
+			"parametersTypes": [
+				"android.hardware.biometrics.CryptoObject",
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback"
+			],
+			"parametersNames":[
+				"crypto",
+				"cancel",
+				"executor",
+				"callback"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.PromptInfo.isConfirmationRequested",
+				"android.hardware.biometrics.PromptInfo.isDeviceCredentialAllowed",
+				"android.hardware.biometrics.PromptInfo.getAuthenticators",
+				"android.content.Context.getUserId",
+				"android.hardware.biometrics.BiometricPrompt.authenticateInternal"
+			],
+			"labels": [
+				"bioClass3",
+				"authenticate",
+				"crypto"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+			"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticate",
+			"return": "void",
+			"parametersTypes": [
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback"
+			],
+			"parametersNames":[
+				"cancel",
+				"executor",
+				"callback"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.PromptInfo.isConfirmationRequested",
+				"android.hardware.biometrics.PromptInfo.isDeviceCredentialAllowed",
+				"android.hardware.biometrics.PromptInfo.getAuthenticators",
+				"android.hardware.biometrics.BiometricPrompt.authenticateInternal",
+				"android.content.Context.getUserId"
+			],
+			"labels": [
+				"bioClass2",
+				"authenticate"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+			"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.cancelAuthentication",
+			"return": "void",
+			"parametersTypes": [],
+			"parametersNames":[],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.content.Context.getOpPackageName",
+				"android.hardware.biometrics.IAuthService.cancelAuthentication"
+			],
+			"labels": [
+				"termination"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+		"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticateInternal",
+			"return": "void",
+			"parametersTypes": [
+				"android.hardware.biometrics.CryptoObject",
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback",
+				"int"
+			],
+			"parametersNames":[
+				"crypto",
+				"cancel",
+				"executor",
+				"callback",
+				"userId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.CryptoObject.getOpId",
+				"android.hardware.biometrics.BiometricPrompt.authenticateInternal"
+			],
+			"labels": [
+				"bioClass3",
+				"crypto",
+				"authenticate"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+			"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.authenticateInternal",
+			"return": "void",
+			"parametersTypes": [
+				"long",
+				"android.os.CancellationSignal",
+				"java.util.concurrent.Executor",
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback",
+				"int"
+			],
+			"parametersNames":[
+				"operationId",
+				"cancel",
+				"executor",
+				"callback",
+				"userId"
+			],
+			"inputIndexes": [],
+			"calleeNames": [
+				"android.hardware.biometrics.CryptoObject.getOpId",
+				"android.os.CancellationSignal.isCanceled", 
+				"android.os.CancellationSignal.setOnCancelListener", 
+				"android.os.Parcel.obtain", 
+				"android.hardware.biometrics.PromptInfo.writeToParcel", 
+				"android.os.Parcel.setDataPosition", 
+				"android.hardware.biometrics.PromptInfo.getAuthenticators", 
+				"android.hardware.biometrics.PromptInfo.setAuthenticators", 
+				"android.hardware.biometrics.IAuthService.authenticate", 
+				"android.content.Context.getOpPackageName", 
+				"java.util.concurrent.Executor.execute", 
+				"android.hardware.biometrics.BiometricAuthenticator.AuthenticationCallback.onAuthenticationError", 
+				"android.content.Context.getString"
+			],
+			"labels": [
+				"bioClass2",
+				"authenticate"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+			"comments": ""
+		},
+		{
+			"name": "android.hardware.biometrics.BiometricPrompt.isCredentialAllowed",
+			"return": "boolean",
+			"parametersTypes": [
+				"int"
+			],
+			"parametersNames":[
+				"allowedAuthenticators"
+			],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/hardware/biometrics/BiometricPrompt.java",
+			"comments": ""
+		},
+
+		{
+			"name": "android.server.biometrics.BiometricService.SettingObserver.updateContentObserver",
+			"return": "void",
+			"parametersTypes": [],
+            "parametersNames": [],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.content.ContentResolver.unregisterContentObserver",
+                "android.content.ContentResolver.registerContentObserver"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.SettingObserver.onChange",
+			"return": "void",
+			"parametersTypes": ["boolean", "Url", "int"],
+            "parametersNames": ["selfChange", "url", "userId"],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.server.biometrics.BiometricService.SettingObserver.notifyEnabledOnKeyguardCallbacks"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.SettingObserver.getEnabledOnKeyguard",
+			"return": "boolean",
+			"parametersTypes": ["int"],
+            "parametersNames": ["userId"],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.server.biometrics.BiometricService.SettingObserver.onChange"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.SettingObserver.getEnabledForApps",
+			"return": "boolean",
+			"parametersTypes": ["int"],
+            "parametersNames": ["userId"],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.server.biometrics.BiometricService.SettingObserver.onChange"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.SettingObserver.getConfirmationAlwaysRequired",
+			"return": "boolean",
+			"parametersTypes": ["int"],
+            "parametersNames": ["userId"],
+			"inputIndexes": [],
+			"calleeNames": [
+                "android.server.biometrics.BiometricService.SettingObserver.onChange"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.SettingObserver.notifyEnabledOnKeyguardCallbacks",
+			"return": "void",
+			"parametersTypes": ["int"],
+            "parametersNames": ["userId"],
+			"inputIndexes": [],
+			"calleeNames": [],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.mBiometricSensorReceiver.onAcquired",
+			"return": "void",
+			"parametersTypes": ["int", "int", "int"],
+            "parametersNames": ["sensorId", "acquiredInfo", "vendorCode"],
+			"inputIndexes": [],
+			"calleeNames": ["android.os.Handler.obtainMessage", "android.os.Handler.sendToTarget"],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.getSensorProperties",
+			"return": "List<SensorPropertiesInternal>",
+			"parametersTypes": ["java.lang.String"],
+            "parametersNames": ["opPackageName"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.onReadyForAuthentication",
+			"return": "void",
+			"parametersTypes": ["int"],
+            "parametersNames": ["cookie"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission","android.os.Handler.obtainMessage", "android.os.Handler.sendToTarget"],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.authenticate",
+			"return": "void",
+			"parametersTypes": ["IBinder", "long", "int", "IBiometricServiceReceiver", "java.lang.String", "PromptInfo"],
+            "parametersNames": ["token", "operationId", "userId", "receiver", "opPackageName", "promptInfo"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission","android.os.Handler.obtainMessage", 
+                "android.os.Handler.sendToTarget", "android.server.biometrics.Utils.isValidAuthenticatorConfig",
+                "android.server.biometrics.Utils.combineAuthenticatorBundles",
+                "android.hardware.biometrics.PromptInfo.isUseDefaultTitle", "android.hardware.biometrics.PromptInfo.isUseDefaultTitle.setTitle",
+                "android.hardware.biometrics.PromptInfo.isUseDefaultTitle.getTitle"],
+			"labels": [
+				"bioClass2",
+				"authenticate"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.cancelAuthentication",
+			"return": "void",
+			"parametersTypes": ["IBinder", "java.lang.String"],
+            "parametersNames": ["token", "opPackageName"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission","android.os.Handler.obtainMessage", 
+                "android.os.Handler.sendToTarget"],
+			"labels": ["sink"],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.canAuthenticate",
+			"return": "int",
+			"parametersTypes": ["java.lang.String", "int", "int", "int"],
+            "parametersNames": ["opPackageName", "userId", "callingUserId", "authenticators"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission",
+                "android.server.biometrics.Utils.isValidAuthenticatorConfig", 
+                "android.server.biometrics.PreAuthInfo.getCanAuthenticateResult",
+                "android.server.biometrics.BiometricService.createPreAuthInfo"],
+			"labels": [
+				"interaction",
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.hasEnrolledBiometrics",
+			"return": "boolean",
+			"parametersTypes": ["int", "java.lang.String"],
+            "parametersNames": ["userId", "opPackageName"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.registerAuthenticator",
+			"return": "void",
+			"parametersTypes": ["int", "int", "int", "IBiometricAuthenticator"],
+            "parametersNames": ["id", "modality", "strength", "authenticator"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission",
+                "android.server.biometrics.BiometricService.SettingObserver.getConfirmationAlwaysRequired",
+                "android.server.biometrics.Utils.isConfirmationSupported",
+                "android.server.biometrics.BiometricStrengthController.updateStrengths"],
+			"labels": [
+				"source",
+				"acquisition"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.invalidateAuthenticatorIds",
+			"return": "void",
+			"parametersTypes": ["int", "int", "IInvalidationCallback"],
+            "parametersNames": ["userId", "fromSensorId", "callback"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission",
+                "android.server.biometrics.BiometricService.InvalidationTracker.start"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.getAuthenticatorIds",
+			"return": "long[]",
+			"parametersTypes": ["int"],
+            "parametersNames": ["callingUserId"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.getCurrentStrength",
+			"return": "int",
+			"parametersTypes": ["int"],
+            "parametersNames": ["sensorId"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.getCurrentModality",
+			"return": "int",
+			"parametersTypes": ["java.lang.String", "int", "int", "int"],
+            "parametersNames": ["opPackageName", "userId", "callingUserId", "authenticators"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission",
+                "android.server.biometrics.Utils.isValidAuthenticatorConfig", 
+                "android.server.biometrics.BiometricService.createPreAuthInfo",
+                "android.server.biometrics.PreAuthInfo.getPreAuthenticateStatus"],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.BiometricServiceWrapper.getSupportedModalities",
+			"return": "int",
+			"parametersTypes": ["int"],
+            "parametersNames": ["authenticators"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.BiometricService.checkInternalPermission",
+                "android.server.biometrics.Utils.isValidAuthenticatorConfig", 
+                "android.server.biometrics.Utils.isCredentialRequested", 
+                "android.server.biometrics.Utils.isBiometricRequested", 
+                "android.server.biometrics.Utils.getPublicBiometricStrength",
+                "android.server.biometrics.Utils.isAtLeastStrength"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.createPreAuthInfo",
+			"return": "PreAuthInfo",
+			"parametersTypes": ["java.lang.String", "int", "int"],
+            "parametersNames": ["opPackageName", "userId", "authenticators"],
+			"inputIndexes": [],
+			"calleeNames": ["android.hardware.biometrics.PromptInfo.setAuthenticators", "android.server.biometrics.PreAuthInfo.create"
+            ],
+			"labels": [
+				"source"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.handleAuthenticate",
+			"return": "void",
+			"parametersTypes": ["IBinder", "long", "int", "IBiometricServiceReceiver", "java.lang.String", "PromptInfo"],
+            "parametersNames": ["token", "operationId", "userId", "receiver", "opPackageName", "promptInfo"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.PreAuthInfo.getPreAuthenticateStatus", "android.server.biometrics.PreAuthInfo.create",
+                "android.server.biometrics.PreAuthInfo.credentialRequested", "android.hardware.biometrics.PromptInfo.setAuthenticators",
+                "android.server.biometrics.PreAuthInfo.credentialAvailable", "android.server.biometrics.BiometricService.authenticateInternal"
+            ],
+			"labels": [
+				"interaction"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		},
+
+        {
+			"name": "android.server.biometrics.BiometricService.authenticateInternal",
+			"return": "void",
+			"parametersTypes": ["IBinder", "long", "int", "IBiometricServiceReceiver", "java.lang.String", "PromptInfo"],
+            "parametersNames": ["token", "operationId", "userId", "receiver", "opPackageName", "promptInfo"],
+			"inputIndexes": [],
+			"calleeNames": ["android.server.biometrics.AuthSession.onCancelAuthSession", "android.server.biometrics.AuthSession.goToInitialState"
+            ],
+			"labels": [
+				"authenticate",
+				"bioClass2"
+			],
+			"framework": "android",
+			"link": "https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/biometrics/BiometricService.java",
+		"comments": ""
+		}
+
+
+
+	], 
+
+
+
+	"cwes": [
+		{
+			"id": "none",
+			"name": "none",
+			"short": "none", 
+			"link": ""
+		},
+
+		{
+			"id": "bioclass1",
+			"name": "Biometric Class 1",
+			"short": "BIOMETRIC_CONVENIENCE", 
+			"link": "https://source.android.com/security/biometric"
+		},
+
+		{
+			"id": "bioclass2",
+			"name": "Biometric Class 2",
+			"short": "BIOMETRIC_WEAK",
+			"link": "https://source.android.com/security/biometric"
+		},
+
+		{
+			"id": "bioclass3",
+			"name": "Biometric Class 3",
+			"short": "BIOMETRIC_STRONG",
+			"link": "https://source.android.com/security/biometric"
+		}
+	]
+}
